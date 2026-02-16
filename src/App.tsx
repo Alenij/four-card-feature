@@ -13,12 +13,22 @@ const App = () => {
         <h2 className="font-semibold text-gray-800 text-2xl mb-3">
           Powered by Technology
         </h2>
-        <p className="text-[10px] text-gray-600 wrap-break-word">
+        <p className="text-[10px] text-gray-600 wrap-break-word mb-10 md:mb-0">
           Our Artificial Intelligence powered tools use millions of project data
           points to ensure that your project is successful
         </p>
       </div>
-      <div className="card-container mt-7 md:mt-0">
+      <div className="card-container mt-7">
+        <div className="card cyan relative">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+
+          <img
+            src={supervisor}
+            alt="supervisor-icon-svg"
+            className="w-11 h-11 absolute right-5 bottom-5"
+          />
+        </div>
         <div className="card red relative">
           <h3>Team Builder</h3>
           <p>
@@ -31,13 +41,13 @@ const App = () => {
             className="w-11 h-11 absolute right-5 bottom-5"
           />
         </div>
-        <div className="card cyan relative">
-          <h3>Supervisor</h3>
-          <p>Monitors activity to identify project roadblocks</p>
+        <div className="card yel relative">
+          <h3>Karma</h3>
+          <p>Regularly evaluates our talent to ensure quality</p>
 
           <img
-            src={supervisor}
-            alt="supervisor-icon-svg"
+            src={karma}
+            alt="karma-icon-svg"
             className="w-11 h-11 absolute right-5 bottom-5"
           />
         </div>
@@ -49,16 +59,6 @@ const App = () => {
           <img
             src={calculator}
             alt="calculator-icom-svg"
-            className="w-11 h-11 absolute right-5 bottom-5"
-          />
-        </div>
-        <div className="card yel relative">
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
-
-          <img
-            src={karma}
-            alt="karma-icon-svg"
             className="w-11 h-11 absolute right-5 bottom-5"
           />
         </div>
