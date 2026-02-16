@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+}
+
+h3 {
+  font-size: 15px;
+  color: #4d4f62;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3, 170px);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 8px 7px rgba(77, 79, 98, 0.1);
+}
+
+.card p {
+  font-size: 8px;
+  color: #a0a1ac;
+}
+
+.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  grid-column: 2;
+  grid-row: 1;
+  transform: translateY(55%);
+}
+
+.cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  grid-row: 2;
+}
+
+.yel {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-row: 3;
+  grid-column: 2;
+  transform: translateY(-55%);
+}
+.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  grid-row: 2;
+  grid-column: 3;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(4, 150px);
+    gap: 15px;
+  }
+
+  .red,
+  .yel,
+  .cyan,
+  .blue {
+    grid-column: auto;
+    grid-row: auto;
+    transform: none;
+  }
+}
